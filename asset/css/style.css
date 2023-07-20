@@ -30,11 +30,16 @@ img {
   width: 100%;
 }
 main {
+  height: 100vh;
   height: calc(100% - 90px);
 }
 footer {
   background-color: var(--spf--footer);
   height: 90px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
 /* end global */
 
@@ -203,6 +208,12 @@ footer {
 .recently_card .position .absolute {
   transition: 1s;
 }
+.sidebar .menu div:hover a {
+  color: var(--spf--light);
+}
+.sidebar .menu :hover .playlist {
+  color: var(--spf--light);
+}
 /* end hover */
 .app {
   height: 100vh;
@@ -226,10 +237,15 @@ footer {
 .sidebar div div {
   gap: 1rem;
 }
+
+.sidebar a {
+  color: var(--spf--text);
+  font-weight: 600;
+}
 .home {
   color: var(--spf--light);
 }
-.menu span {
+.menu a {
   font-size: 1.3rem;
 }
 .playlist h2 {
@@ -239,6 +255,20 @@ footer {
 .login img {
   width: 10%;
 }
+.login div:first-child {
+  border-bottom: 1px solid gray;
+  padding-bottom: 1rem;
+}
+.profile {
+  width: 100%;
+  background-color: grey;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+.login .name_loging {
+  color: var(--spf--light);
+}
+
 /* end sidebar */
 
 /* upgradee */
@@ -361,7 +391,7 @@ footer {
   .content {
     width: calc(100% - 50px);
   }
-  .menu span {
+  .sidebar a {
     display: none;
   }
   .logo {
@@ -370,6 +400,12 @@ footer {
   .sidebar div div img {
     width: 80%;
     filter: opacity(70%);
+  }
+  .profile {
+    width: 100%;
+    background-color: grey;
+    border-radius: 50%;
+    aspect-ratio: 1;
   }
   .display_on {
     display: block;
