@@ -28,16 +28,18 @@ span {
 img {
   width: 100%;
 }
+main {
+  height: calc(100% - 90px);
+}
 footer {
   position: static;
+  height: 90px;
 }
 /* end global */
 
 /* debug */
 .debug .sidebar {
   background-color: antiquewhite;
-
-  width: 20%;
 }
 .debug .menu {
   background-color: aqua;
@@ -87,7 +89,6 @@ footer {
 } */
 .debug footer {
   background-color: lightseagreen;
-  height: 90px;
 }
 .debug .audio div {
   background-color: blue;
@@ -192,9 +193,15 @@ footer {
   transition: 1s;
 }
 /* end hover */
+.app {
+  height: 100vh;
+}
+.content {
+  width: calc(100% - 240px);
+}
 /* sidebar */
 .sidebar {
-  max-width: 240px;
+  width: 240px;
 }
 
 /* end sidebar */
@@ -313,7 +320,7 @@ footer {
 
 @media screen and (max-width: 500px) {
   .debug .sidebar {
-    width: 10%;
+    width: 50px;
   }
   .btn {
     font-size: 0.8rem;
