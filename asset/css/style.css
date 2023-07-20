@@ -29,9 +29,9 @@ span {
 img {
   width: 100%;
 }
-/* main {
+main {
   height: calc(100% - 90px);
-} */
+}
 footer {
   background-color: var(--spf--footer);
   height: 90px;
@@ -171,7 +171,11 @@ footer {
 }
 .scroll {
   overflow-y: scroll;
-  height: 48.125rem;
+  height: 44.125rem;
+}
+.scroll_play {
+  overflow-y: scroll;
+  height: 12.5rem;
 }
 /* end utility */
 /* hover */
@@ -208,6 +212,7 @@ footer {
 }
 /* sidebar */
 .sidebar {
+  height: auto;
   width: 240px;
   padding: 1rem;
 }
@@ -230,6 +235,9 @@ footer {
 .playlist h2 {
   text-transform: uppercase;
   text-align: left;
+}
+.login img {
+  width: 10%;
 }
 /* end sidebar */
 
@@ -346,8 +354,29 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-  .debug .sidebar {
+  .sidebar {
     width: 50px;
+    padding: 0.5rem;
+  }
+  .content {
+    width: calc(100% - 50px);
+  }
+  .menu span {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .sidebar div div img {
+    width: 80%;
+    filter: opacity(70%);
+  }
+  .display_on {
+    display: block;
+  }
+
+  .playlist {
+    display: none;
   }
   .btn {
     font-size: 0.8rem;
