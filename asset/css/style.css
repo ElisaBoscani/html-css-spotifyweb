@@ -6,6 +6,7 @@
 }
 body {
   font-family: "DM Sans", sans-serif;
+  background-color: var(--spf--dark);
 }
 a {
   text-decoration: none;
@@ -28,17 +29,17 @@ span {
 img {
   width: 100%;
 }
-main {
+/* main {
   height: calc(100% - 90px);
-}
+} */
 footer {
-  position: static;
+  background-color: var(--spf--footer);
   height: 90px;
 }
 /* end global */
 
 /* debug */
-.debug .sidebar {
+/* .debug .sidebar {
   background-color: antiquewhite;
 }
 .debug .menu {
@@ -52,7 +53,7 @@ footer {
   height: 200px;
   width: 100%;
   border: 1px solid black;
-}
+} */
 /* .debug .evidence {
   background-color: lightpink;
   width: 100%;
@@ -128,6 +129,9 @@ footer {
 .pt-2 {
   padding-top: 2rem;
 }
+.pt-1 {
+  padding-top: 1rem;
+}
 .p-1 {
   padding: 1rem;
 }
@@ -162,9 +166,12 @@ footer {
 .fa-2xl {
   font-size: 4em;
 }
+.fa-xl {
+  font-size: 2em;
+}
 .scroll {
   overflow-y: scroll;
-  height: 38.125rem;
+  height: 48.125rem;
 }
 /* end utility */
 /* hover */
@@ -202,8 +209,28 @@ footer {
 /* sidebar */
 .sidebar {
   width: 240px;
+  padding: 1rem;
 }
-
+.logo {
+  width: 80%;
+}
+.sidebar div div img {
+  width: 15%;
+  filter: opacity(70%);
+}
+.sidebar div div {
+  gap: 1rem;
+}
+.home {
+  color: var(--spf--light);
+}
+.menu span {
+  font-size: 1.3rem;
+}
+.playlist h2 {
+  text-transform: uppercase;
+  text-align: left;
+}
 /* end sidebar */
 
 /* upgradee */
