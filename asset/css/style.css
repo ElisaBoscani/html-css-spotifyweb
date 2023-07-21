@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 body {
+  height: 100vh;
   font-family: "DM Sans", sans-serif;
   background-color: var(--spf--dark);
 }
@@ -30,7 +31,6 @@ img {
   width: 100%;
 }
 main {
-  height: 100vh;
   height: calc(100% - 90px);
 }
 footer {
@@ -138,6 +138,9 @@ footer {
 .pt-2 {
   padding-top: 2rem;
 }
+.py-1 {
+  padding-left: 1rem;
+}
 .pt-1 {
   padding-top: 1rem;
 }
@@ -151,7 +154,8 @@ footer {
   border-radius: 2.25rem;
   font-weight: 600;
 }
-.bg_color {
+.app_content {
+  height: 100%;
   background-color: var(--spf--primary);
 }
 
@@ -179,9 +183,15 @@ footer {
 .fa-xl {
   font-size: 2em;
 }
+.menu_play .fa-xl {
+  font-size: 1em;
+}
+.menu_play .fa-2xl {
+  font-size: 2em;
+}
 .scroll {
   overflow-y: scroll;
-  height: 44.125rem;
+  height: calc(100% - 90px);
 }
 .scroll_play {
   overflow-y: scroll;
@@ -216,8 +226,20 @@ footer {
 .sidebar .menu div:hover a {
   color: var(--spf--light);
 }
-.sidebar .menu .playlist .scroll_play:hover a {
+.sidebar .menu .playlist:hover h2 {
   color: var(--spf--light);
+}
+.sidebar .menu .playlist div:hover i {
+  color: var(--spf--light);
+}
+.login:hover a {
+  color: #ffffff;
+}
+.audio:hover span {
+  color: #ffffff;
+}
+.footer_icon:hover i {
+  color: #ffffff;
 }
 /* end hover */
 .app {
@@ -235,10 +257,10 @@ footer {
   padding-left: 0.5rem;
   width: 80%;
 }
-.sidebar div div img {
-  width: 15%;
+.sidebar .menu div img {
+  width: 20%;
   filter: opacity(70%);
-  padding-left: 0.5rem;
+  padding-left: 1rem;
 }
 .sidebar div div {
   gap: 1rem;
@@ -264,6 +286,9 @@ footer {
   text-transform: uppercase;
   text-align: left;
 }
+.login {
+  padding: 1rem;
+}
 .login img {
   width: 10%;
 }
@@ -279,9 +304,6 @@ footer {
 }
 .login .name_loging {
   color: var(--spf--light);
-}
-.menu_play .fa-2xl {
-  font-size: 3em;
 }
 
 /* end sidebar */
@@ -357,22 +379,18 @@ footer img {
   width: 3.5rem;
 }
 .col_3 {
-  width: calc(100% / 3);
+  width: calc(100% / 12 * 3);
 }
 .audio > div {
   gap: 1rem;
   align-items: center;
 }
-.footer_icon,
-.footer_icon i {
-  padding-left: 1rem;
-}
+
 .name_play {
   color: var(--spf--light);
 }
 .menu_play {
-  width: 100%;
-  gap: 3rem;
+  gap: 2rem;
 }
 .grandezza {
   scale: unset;
@@ -415,6 +433,7 @@ footer img {
 }
 .line_active_audio {
   position: absolute;
+
   top: 0;
   z-index: 10;
   width: 15%;
@@ -422,6 +441,17 @@ footer img {
   background-color: var(--spf--light);
   border-radius: 20px;
 }
+.circle {
+  position: absolute;
+  top: 0;
+  left: 37px;
+  display: none;
+}
+.audio_time .position:hover .line_active {
+  color: #adff2f;
+  display: block;
+}
+
 /* end footer */
 
 /* media query */
