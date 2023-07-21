@@ -25,14 +25,14 @@
       <!-- <div class="d_flex"> -->
       <div class="sidebar d_flex d_column justify_spbe">
         <div class="menu">
-          <img src="./asset/img/logo.svg" alt="logo" class="logo" />
+          <img src="./asset/img/logo.svg" alt="logo" class="logo pt-2" />
           <img
             src="./asset/img/logo-small.svg"
             alt="logo_small"
             class="display_none display_on"
           />
           <div class="d_flex pt-2">
-            <img src="./asset/img/home.svg" alt="home" />
+            <img src="./asset/img/home.svg" alt="home" class="border_left" />
             <a href="#" class="home">Home</a>
           </div>
           <div class="d_flex pt-1">
@@ -206,8 +206,46 @@
     </main>
     <footer>
       <div class="d_flex audio justify_spbe">
-        <div></div>
-        <div></div>
+        <div class="d_flex">
+          <img src="./asset/img/sinister.jpeg" alt="sinister" />
+          <div class="d_flex d_column">
+            <span class="name_play">Sinister</span>
+            <span>Brano Nome</span>
+          </div>
+          <div class="footer_icon">
+            <i class="fa-regular fa-heart fa-lg" style="color: #787b7f"></i>
+            <i class="fa-regular fa-folder fa-lg" style="color: #787b7f"></i>
+          </div>
+        </div>
+        <div class="d_flex d_column pt-1">
+          <div class="d_flex menu_play">
+            <i class="fa-solid fa-shuffle fa-xl" style="color: #ffffff"></i>
+            <i
+              class="fa-solid fa-backward-step fa-xl"
+              style="color: #ffffff"
+            ></i>
+            <i
+              class="fa-regular fa-circle-play fa-2xl"
+              style="color: #ffffff"
+            ></i>
+            <i
+              class="fa-solid fa-forward-step fa-xl"
+              style="color: #ffffff"
+            ></i>
+            <i
+              class="fa-solid fa-rotate-right fa-xl"
+              style="color: #ffffff"
+            ></i>
+          </div>
+          <div class="d_flex audio_time">
+            <span>0:25</span>
+            <div class="position">
+              <div class="line_play"></div>
+              <div class="line_active"></div>
+            </div>
+            <span>4:35</span>
+          </div>
+        </div>
         <div></div>
       </div>
     </footer>

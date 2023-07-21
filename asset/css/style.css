@@ -34,6 +34,7 @@ main {
   height: calc(100% - 90px);
 }
 footer {
+  padding: 1rem;
   background-color: var(--spf--footer);
   height: 90px;
   position: fixed;
@@ -93,7 +94,7 @@ footer {
   background-color: red;
   border: 1px solid black;
 } */
-.debug footer {
+/* .debug footer {
   background-color: lightseagreen;
 }
 .debug .audio div {
@@ -101,7 +102,7 @@ footer {
   height: 50px;
   width: 100px;
   border: 1px solid black;
-}
+} */
 /* end debug */
 
 /* utility */
@@ -168,7 +169,7 @@ footer {
   height: 0.125rem;
   background-color: var(--spf--line);
 }
-.fa-2xl {
+.position .fa-2xl {
   font-size: 4em;
 }
 .fa-xl {
@@ -180,7 +181,7 @@ footer {
 }
 .scroll_play {
   overflow-y: scroll;
-  height: 12.5rem;
+  height: 19.5rem;
 }
 /* end utility */
 /* hover */
@@ -211,7 +212,7 @@ footer {
 .sidebar .menu div:hover a {
   color: var(--spf--light);
 }
-.sidebar .menu :hover .playlist {
+.sidebar .menu .playlist .scroll_play:hover a {
   color: var(--spf--light);
 }
 /* end hover */
@@ -225,14 +226,15 @@ footer {
 .sidebar {
   height: auto;
   width: 240px;
-  padding: 1rem;
 }
 .logo {
+  padding-left: 0.5rem;
   width: 80%;
 }
 .sidebar div div img {
   width: 15%;
   filter: opacity(70%);
+  padding-left: 0.5rem;
 }
 .sidebar div div {
   gap: 1rem;
@@ -245,8 +247,14 @@ footer {
 .home {
   color: var(--spf--light);
 }
+.border_left {
+  border-left: 2px solid var(--spf--line);
+}
 .menu a {
   font-size: 1.3rem;
+}
+.playlist {
+  padding-left: 0.5rem;
 }
 .playlist h2 {
   text-transform: uppercase;
@@ -267,6 +275,9 @@ footer {
 }
 .login .name_loging {
   color: var(--spf--light);
+}
+.menu_play .fa-2xl {
+  font-size: 3em;
 }
 
 /* end sidebar */
@@ -337,6 +348,47 @@ footer {
 }
 
 /* end artist */
+/* footer */
+footer img {
+  width: 3.5rem;
+}
+.audio > div {
+  gap: 2rem;
+  align-items: center;
+}
+.footer_icon {
+  padding-left: 1.5rem;
+}
+.name_play {
+  color: var(--spf--light);
+}
+.menu_play {
+  gap: 3rem;
+}
+.audio_time {
+  align-items: center;
+  gap: 1rem;
+}
+.line_play {
+  width: 36rem;
+  height: 0.3rem;
+  background-color: var(--spf--text);
+  border-radius: 20px;
+}
+.line_active {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 15rem;
+  height: 0.3rem;
+  background-color: var(--spf--light);
+  border-radius: 20px;
+}
+.audio_time span {
+  color: var(--spf--light);
+}
+/* end footer */
+
 /* media query */
 @media screen and (max-width: 900px) {
   .recently_card div {
