@@ -31,21 +31,21 @@
             alt="logo_small"
             class="display_none display_on"
           />
-          <div class="d_flex pt-2">
+          <div class="text_menu d_flex pt-2">
             <img src="./asset/img/home.svg" alt="home" class="border_left" />
             <a href="#" class="home">Home</a>
           </div>
-          <div class="d_flex pt-2">
+          <div class="text_menu d_flex pt-2">
             <img src="./asset/img/search.svg" alt="home" />
             <a href="#">Cerca</a>
           </div>
-          <div class="d_flex pt-1">
+          <div class="text_menu d_flex pt-1">
             <img src="./asset/img/libreria.svg" alt="home" />
             <a href="#">La tua libreria</a>
           </div>
           <div class="playlist pt-2">
             <h2>Playlist</h2>
-            <div class="pt-2">
+            <div class="pt-2 hover_playlist">
               <i
                 class="fa-solid fa-square-plus fa-xl"
                 style="color: #787b7f"
@@ -53,13 +53,15 @@
               <a href="#">Crea Playlist</a>
             </div>
             <div class="pt-2 d_flex d_column scroll_play">
-              <a href="#">Nome Playlist</a>
-              <a href="#">Nome Playlist</a>
-              <a href="#">Nome Playlist</a>
-              <a href="#">Nome Playlist</a>
-              <a href="#">Nome Playlist</a>
-              <a href="#">Nome Playlist</a>
-              <a href="#">Nome Playlist</a>
+              <ul>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -246,7 +248,7 @@
               <div class="line_active">
                 <i
                   class="fa-solid fa-circle fa-2xs circle"
-                  style="color: #ffffff"
+                  style="color: #adff2f"
                 ></i>
               </div>
             </div>
@@ -260,8 +262,13 @@
             <i class="fa-solid fa-volume-high fa-sm" style="color: #ffffff"></i>
           </div>
           <div class="position width">
-            <div class="line_play_audio"></div>
-            <div class="line_active_audio"></div>
+            <div class="line_play"></div>
+            <div class="line_active">
+              <i
+                class="fa-solid fa-circle fa-2xs circle"
+                style="color: #adff2f"
+              ></i>
+            </div>
           </div>
         </div>
       </div>

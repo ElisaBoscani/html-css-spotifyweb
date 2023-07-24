@@ -195,7 +195,7 @@ footer {
 }
 .scroll_play {
   overflow-y: scroll;
-  height: 19.5rem;
+  height: 15.5rem;
 }
 /* end utility */
 /* hover */
@@ -223,23 +223,32 @@ footer {
 .recently_card .position .absolute {
   transition: 1s;
 }
-.sidebar .menu div:hover a {
+.text_menu:hover a {
   color: var(--spf--light);
 }
-.sidebar .menu .playlist:hover h2 {
+.hover_playlist:hover a {
   color: var(--spf--light);
 }
-.sidebar .menu .playlist div:hover i {
+.hover_playlist:hover i {
+  filter: brightness(3);
+}
+.scroll_play ul li:hover a {
   color: var(--spf--light);
 }
 .login:hover a {
   color: #ffffff;
 }
-.audio:hover span {
+.audio div:hover span {
   color: #ffffff;
 }
 .footer_icon:hover i {
   color: #ffffff;
+}
+.position:hover .line_active {
+  background-color: var(--spf--line);
+}
+.position:hover .circle {
+  display: block;
 }
 /* end hover */
 .app {
@@ -285,6 +294,9 @@ footer {
 .playlist h2 {
   text-transform: uppercase;
   text-align: left;
+}
+.scroll_play li {
+  line-height: 1.5rem;
 }
 .login {
   padding: 1rem;
@@ -433,7 +445,6 @@ footer img {
 }
 .line_active_audio {
   position: absolute;
-
   top: 0;
   z-index: 10;
   width: 15%;
@@ -444,12 +455,8 @@ footer img {
 .circle {
   position: absolute;
   top: 0;
-  left: 37px;
+  right: 0;
   display: none;
-}
-.audio_time .position:hover .line_active {
-  color: #adff2f;
-  display: block;
 }
 
 /* end footer */
